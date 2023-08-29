@@ -4,25 +4,10 @@ import styles from './UsersList.module.css'
 
 const UsersList = (props) => {
 
-    let people = [
-        {
-            id: '1', name: 'Sasha',
-        },
-        {
-            id: '2', name: 'Masha',
-        },
-        {
-            id: '3', name: 'Pasha',
-        },
-        {
-            id: '4', name: 'Andruha',
-        },
-    ]
-
     let peopleComponents = []
 
-    for (let i = 0; i < people.length; i++) {
-        peopleComponents.push(<User id={people[i].id} userName={people[i].name} />)
+    for (let i = 0; i < props.people.length; i++) {
+        peopleComponents.push(<User id={props.people[i].id} userName={props.people[i].name} />)
     }
 
     return (

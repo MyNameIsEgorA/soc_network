@@ -9,8 +9,8 @@ const Dialogs = (props) => {
         <div className={styles.content}>
             <h1 className={styles.heading}>Dialogs</h1>
             <div className={styles.dialog}>
-                <UsersList />
-                <MessagesList />
+                <UsersList people={props.people} />
+                <MessagesList messages={props.messages} />
             </div>
         </div>
     )

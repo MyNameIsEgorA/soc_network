@@ -3,19 +3,12 @@ import Message from "./Message/Message";
 import styles from './MessagesList.module.css';
 
 
-const MessagesList = () => {
+const MessagesList = (props) => {
 
     let messagesList = []
 
-    let messages = [
-        { id: "1", message: "Ayooo" },
-        { id: "2", message: "Wassup Man!" },
-        { id: "3", message: "Maincraft is my life!!!" },
-        { id: "4", message: "No, man, red panties isn't gay" }
-    ]
-
-    for (let i = 0; i < messages.length; i++) {
-        messagesList.push(<Message message={messages[i].message} id={messages[i].id} />)
+    for (let i = 0; i < props.messages.length; i++) {
+        messagesList.push(<Message message={props.messages[i].message} id={props.messages[i].id} />)
     }
 
     return (

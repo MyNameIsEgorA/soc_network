@@ -4,10 +4,26 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// Random blL(data) hard-wrote. Must be there or get from Redux (TODO). Don't move it to the bottom
+let people = [
+  { id: '1', name: 'Sasha', },
+  { id: '2', name: 'Masha', },
+  { id: '3', name: 'Pasha', },
+  { id: '4', name: 'Andruha', },
+]
+
+// Random blL(data) hard-wrote. Must be there or get from Redux (TODO). Don't move it to the bottom
+let messages = [
+  { id: "1", message: "Ayooo" },
+  { id: "2", message: "Wassup Man!" },
+  { id: "3", message: "Maincraft is my life!!!" },
+  { id: "4", message: "No, man, red panties isn't gay" },
+]
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App messages={messages} people={people} />
   </React.StrictMode>
 );
 
