@@ -1,0 +1,20 @@
+.nav {
+    grid-area: n;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.nav_item {
+    transition: 300ms;
+    color: #4141ff;
+}
+
+.nav_item:hover {
+    color: black
+}
+
+.nav a.active {
+    color: rgb(11, 13, 112);
+}

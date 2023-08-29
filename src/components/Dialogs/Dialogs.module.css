@@ -1,0 +1,14 @@
+.content {
+    margin-left: 50px;
+}
+
+.dialog {
+    display: grid;
+    grid-template-columns: 2.7fr 10fr;
+}
+
+.people, .messages {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
