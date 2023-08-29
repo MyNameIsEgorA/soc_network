@@ -6,6 +6,7 @@ First of all I'd recommend you to check the mind-map of the projects structure h
 
 The project was started in the middle of August 2023 hopefully it will be finished this year
 
+<<<<<<< HEAD
 To start the project make the following commands in your command line:
 
 ##npm install (installs all the modules)
@@ -13,3 +14,15 @@ To start the project make the following commands in your command line:
 ##npm start (starts the project)
 
 After you will be redirected to your browser. If not just open the following URL http://localhost:3000/profile in your browser
+=======
+
+To start the project make the following commands in your command line:
+
+##npm install 
+(installs all the modules)
+
+##npm start
+(starts the project)
+
+After you will be redirected to your browser. If not just open the following URL http://localhost:3000/profile in your browser
+>>>>>>> e9402d05e42429ff26e26835531aebae29802d30
