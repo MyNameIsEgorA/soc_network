@@ -1,9 +1,12 @@
-.nav {
+.container {
     grid-area: n;
+}
+
+.nav {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .nav_item {

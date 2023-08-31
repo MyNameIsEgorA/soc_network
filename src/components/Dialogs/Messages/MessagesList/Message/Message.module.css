@@ -1,0 +1,16 @@
+.message {
+    padding-bottom: 5px;
+}
+
+.message:first-child {
+    padding-top: 10px;
+}
+
+.sent_from {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.sent_to {
+    margin-left: 20px;
+}

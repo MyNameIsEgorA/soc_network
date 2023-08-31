@@ -18,7 +18,7 @@ const App = (props) => {
         <div class='content'>
           <Routes>
             <Route path='/profile' element={<Profile />} />
-            <Route path='/dialogs/*' element={<Dialogs messages={props.messages} people={props.people} />} />
+            <Route path='/dialogs/*' element={<Dialogs messages={props.messages} people={props.people} sendMessage={props.sendMessage} />} />
           </Routes>
         </div>
       </BrowserRouter>

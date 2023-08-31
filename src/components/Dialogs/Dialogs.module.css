@@ -1,14 +1,12 @@
-.content {
+.heading {
     margin-left: 50px;
+}
+
+.border {
+    border-top: 0.5px solid black;
 }
 
 .dialog {
     display: grid;
     grid-template-columns: 2.7fr 10fr;
-}
-
-.people, .messages {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
 }

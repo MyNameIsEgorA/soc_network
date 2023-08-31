@@ -1,5 +1,7 @@
 .messages {
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
     gap: 15px;
+    margin-left: 50px;
 }

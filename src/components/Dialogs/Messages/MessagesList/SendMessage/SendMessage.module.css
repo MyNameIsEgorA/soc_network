@@ -1,0 +1,29 @@
+.container {
+    padding: 10px 0;
+    background: #b7daff;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid black;
+}
+
+.textarea {
+    border-radius: 10px;
+    margin-left: 20px;
+    width: calc(100% - 105px);
+    background: transparent;
+    padding-left: 20px;
+    font-size: 14px;
+    height: 30px;
+    border: 1px solid #b0b0f7;
+    outline: none;
+}
+
+.send_messsage {
+    /* position: absolute; */
+    /* right: 0px; */
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+}
