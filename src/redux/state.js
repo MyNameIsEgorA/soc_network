@@ -1,3 +1,5 @@
+import { renderLayout } from "../render"
+
 let state = {
     people: [
         { id: 1, name: 'Sasha', },
@@ -10,7 +12,8 @@ let state = {
         { id: 2, message: "Wassup Man!", messageCode: "sent_from" },
         { id: 3, message: "Maincraft is my life!!! And you are gay", messageCode: 'sent_to' },
         { id: 4, message: "No, man, red panties isn't gay", messageCode: "sent_from" },
-    ]
+    ],
+    CurrentMessageText: '1'
 }
 
 export const sendMessage = (messageText) => {
@@ -22,8 +25,13 @@ export const sendMessage = (messageText) => {
     }
 
     state.messages.push(message)
-    console.log(state.messages)
+    state.CurrentMessageText = ''
+    renderLayout(state)
 }
 
+export const newPostUpdate = (text) => {
+    state.CurrentMessageText = text
+    renderLayout(state)
+}
 
 export default state;

@@ -11,7 +11,11 @@ const Dialogs = (props) => {
             <div className={styles.border}></div>
             <div className={styles.dialog}>
                 <UsersList people={props.people} />
-                <MessagesList messages={props.messages} sendMessageTo={props.sendMessage} />
+                <MessagesList messages={props.messages}
+                    sendMessageTo={props.sendMessage}
+                    CurrentMessageText={props.CurrentMessageText}
+                    newPostAreaUpdate={props.newPostAreaUpdate}
+                />
             </div>
         </div>
     )

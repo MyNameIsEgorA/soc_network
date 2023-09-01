@@ -15,7 +15,9 @@ const MessagesList = (props) => {
     return (
         <div className={styles.messages}>
             {messagesList}
-            <SendMessage sendMessageTo={props.sendMessageTo} />
+            <SendMessage sendMessageTo={props.sendMessageTo}
+                CurrentMessageText={props.CurrentMessageText}
+                newPostAreaUpdate={props.newPostAreaUpdate} />
         </div>
     )
 }
