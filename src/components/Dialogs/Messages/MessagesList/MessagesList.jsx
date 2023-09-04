@@ -6,18 +6,21 @@ import SendMessage from "./SendMessage/SendMessage"
 
 const MessagesList = (props) => {
 
+    console.log(props.CurrentMessageText)
+
     let messagesList = []
 
-    for (let i = 0; i < props.messages.length; i++) {
-        messagesList.push(<Message message={props.messages[i].message} id={props.messages[i].id} messageCode={props.messages[i].messageCode} />)
+    let dataMessagesList = props.store.state.messages
+
+    for (let i = 0; i < dataMessagesList.length; i++) {
+        messagesList.push(<Message message={dataMessagesList[i].message} id={dataMessagesList[i].id}
+            messageCode={dataMessagesList[i].messageCode} />)
     }
 
     return (
         <div className={styles.messages}>
             {messagesList}
-            <SendMessage sendMessageTo={props.sendMessageTo}
-                CurrentMessageText={props.CurrentMessageText}
-                newPostAreaUpdate={props.newPostAreaUpdate} />
+            <SendMessage store={props.store} />
         </div>
     )
 }

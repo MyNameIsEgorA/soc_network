@@ -1,9 +1,24 @@
 import reportWebVitals from './reportWebVitals';
+import React from 'react';
+import './index.css';
+import App from './App';
+import ReactDOM from 'react-dom/client';
+import { store } from './redux/state';
 
-import state from './redux/state';
-import { renderLayout, } from './render';
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
-renderLayout(state)
+const renderLayout = () => {
+
+    root.render(
+        <React.StrictMode>
+            <App store={store} />
+        </React.StrictMode>
+    );
+}
+
+renderLayout()
+
+store.subscribe(renderLayout)
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

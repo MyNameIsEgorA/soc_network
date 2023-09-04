@@ -1,25 +1,24 @@
-import React, { createRef } from "react";
+import React from 'react';
 import styles from './MyPosts.module.css'
 import Post from "./Post/Post";
+import AddPost from './AddPost/AddPost';
 
-const MyPosts = () => {
+const MyPosts = (props) => {
 
-    let inputRef = createRef();
+    let postsList = []
 
-    let alerting = () => {
-        console.log(inputRef.current.value)
+    let dataPostsList = props.store.state.posts
+
+    for (let i = 0; i < dataPostsList.length; i++) {
+        postsList.push(<Post text={dataPostsList[i].text} first_name={dataPostsList[i].first_name} last_name={dataPostsList[i].last_name} likes={dataPostsList[i].likes} />)
     }
 
     return (
         <div className={styles.my_posts}>
             <div className={styles.heading}>My Posts</div>
-            <div className={styles.new_post_area}>
-                <textarea className={styles.textarea} ref={inputRef}></textarea>
-                <button className={styles.post_button} onClick={alerting}>New post</button>
-            </div>
+            <AddPost store={props.store} />
             <div className={styles.posts_container}>
-                <Post text='Здарова, заебал. Я Санька, но можешь меня звать Александ Григорьевич!' first_name='Александр' last_name="Александров" likes="23" />
-                <Post text='Это начало моего босяцкого блога про говно и мух)' first_name='Александр' last_name="Александров" likes="43" />
+                {postsList}
             </div>
         </div>
     )

@@ -5,16 +5,15 @@ import MessagesList from "./Messages/MessagesList/MessagesList";
 
 const Dialogs = (props) => {
 
+    console.log(props.CurrentMessageText)
+
     return (
         <div className={styles.content}>
             <h1 className={styles.heading}>Dialogs</h1>
             <div className={styles.border}></div>
             <div className={styles.dialog}>
-                <UsersList people={props.people} />
-                <MessagesList messages={props.messages}
-                    sendMessageTo={props.sendMessage}
-                    CurrentMessageText={props.CurrentMessageText}
-                    newPostAreaUpdate={props.newPostAreaUpdate}
+                <UsersList people={props.store.state.people} />
+                <MessagesList store={props.store}
                 />
             </div>
         </div>
