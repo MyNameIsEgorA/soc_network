@@ -10,7 +10,7 @@ const MessagesList = (props) => {
 
     let messagesList = []
 
-    let dataMessagesList = props.store.state.messages
+    let dataMessagesList = props.state.messages
 
     for (let i = 0; i < dataMessagesList.length; i++) {
         messagesList.push(<Message message={dataMessagesList[i].message} id={dataMessagesList[i].id}
@@ -20,7 +20,7 @@ const MessagesList = (props) => {
     return (
         <div className={styles.messages}>
             {messagesList}
-            <SendMessage store={props.store} />
+            <SendMessage state={props.state} dispatch={props.dispatch} />
         </div>
     )
 }

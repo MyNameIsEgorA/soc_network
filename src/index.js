@@ -11,7 +11,7 @@ const renderLayout = () => {
 
     root.render(
         <React.StrictMode>
-            <App store={store} />
+            <App state={store.state} dispatch={store.dispatch.bind(store)} />
         </React.StrictMode>
     );
 }

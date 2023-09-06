@@ -12,8 +12,8 @@ const Dialogs = (props) => {
             <h1 className={styles.heading}>Dialogs</h1>
             <div className={styles.border}></div>
             <div className={styles.dialog}>
-                <UsersList people={props.store.state.people} />
-                <MessagesList store={props.store}
+                <UsersList people={props.state.people} />
+                <MessagesList state={props.state} dispatch={props.dispatch}
                 />
             </div>
         </div>

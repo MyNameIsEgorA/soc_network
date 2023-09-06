@@ -21,12 +21,12 @@ const App = (props) => {
           <Routes>
             <Route path='/profile' element={
               <Profile
-                store={props.store}
+                state={props.state} dispatch={props.dispatch}
               />
             } />
             <Route path='/dialogs/*' element={
               <Dialogs
-                store={props.store}
+                state={props.state} dispatch={props.dispatch}
               />} />
           </Routes>
         </div>
