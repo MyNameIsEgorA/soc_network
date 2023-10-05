@@ -26,8 +26,8 @@ export let store = {
             { id: 4, message: "No, man, red panties isn't gay", messageCode: "sent_from" },
         ],
         posts: [
-            { id: 1, text: 'Здарова, заебал. Я Санька, но можешь меня звать Александ Григорьевич!', first_name: 'Александр', last_name: "Александров", likes: 23 },
-            { id: 2, text: 'Это начало моего босяцкого блога про говно и мух)', first_name: 'Александр', last_name: 'Александров', likes: 410 }
+            { id: 1, text: '12312323!', first_name: 'Александр', last_name: "Александров", likes: 23 },
+            { id: 2, text: 'Вилкой в глаз или ?', first_name: 'Александр', last_name: 'Александров', likes: 410 }
         ],
 
         currentMessageText: '1',
