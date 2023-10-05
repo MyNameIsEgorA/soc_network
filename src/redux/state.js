@@ -22,8 +22,8 @@ export let store = {
         messages: [
             { id: 1, message: "Ayooo", messageCode: 'sent_to' },
             { id: 2, message: "Wassup Man!", messageCode: "sent_from" },
-            { id: 3, message: "Maincraft is my life!!! And you are gay", messageCode: 'sent_to' },
-            { id: 4, message: "No, man, red panties isn't gay", messageCode: "sent_from" },
+            { id: 3, message: "Maincraft is my life!!!", messageCode: 'sent_to' },
+            { id: 4, message: "No, man, red panties aren't cool", messageCode: "sent_from" },
         ],
         posts: [
             { id: 1, text: '12312323!', first_name: 'Александр', last_name: "Александров", likes: 23 },
